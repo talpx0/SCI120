@@ -19,18 +19,20 @@ int main() {
     int r_points = 400; 
     double dr = (rmax - rmin) / (r_points -1 );
     double r = rmin;
-    while (r < rmax) {
-        double x = 0.5; 
-        double step = 0;
+    while (r <= rmax) {
+        double x = 0.5;
+        int step = 0;
         while (step < tranSteps) {
             x = logistic(x, r);
-            while (step < simsSteps){
-                x = logistic(x, r);
-                fout << r << "," << x << "\n";
-                step = step + 1;
-            }   
             step = step + 1;
         }
+        step = 0;
+        while (step < simsSteps) {
+            x = logistic(x, r);
+            fout << r << "," << x << "\n";
+            step = step + 1;
+        }
+
         r = r + dr;
     }
     cout << "Output written to" << filename << "\n";
