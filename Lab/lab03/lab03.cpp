@@ -7,8 +7,14 @@ void printpars(int i,double a, double b, double p ,double fp) {
         cout << i <<"   "<<  a << "          "<< b << "          " << p << "          " << fp << "\n";
     }
 }
-
-double bisection(function<double(double)> f, double a, double b, double eps, int N){
+/*
+cout << setw(3)  << i
+         << setw(10) << a
+         << setw(10) << b
+         << setw(10) << p
+         << setw(10) << fp << '\n';
+*/
+double bisection(double (*f)(double), double a, double b, double eps, int N){
    f(a);
    f(b);
    if (f(a)*f(b) > 0){
@@ -18,20 +24,20 @@ double bisection(function<double(double)> f, double a, double b, double eps, int
        return 1.0;
    }
    int i = 1;
-   while (i <= N)
-   {
-    double p = (a + b) / 2.0;
-    double fp = f(p);
-    printpars(i,a,b,p,fp);
-    if ((b-a)/2 < eps || abs(fp) < eps){
-        return p;
-    }
-    if (f(a)* fp > 0){
-        a = p;
-    }
-    else{
-        b = p;
-    }
+   while (i <= N){
+        double p = (a + b) / 2.0;
+        double fp = f(p);
+        printpars(i,a,b,p,fp);
+        if ((b-a)/2 < eps || abs(fp) < eps){
+            return p;
+        }
+        if (f(a)* fp > 0){
+            a = p;
+        }
+        else{
+            b = p;
+        }
+        i++;
    }
 
    cout << "Method failed to converge after N iterations replacing N by its actual value.";
@@ -39,8 +45,7 @@ double bisection(function<double(double)> f, double a, double b, double eps, int
 }
 
 double fun(double x){
-    return 5*x*x - 1.75*x - 10;
-    // 5.0*pow(x, 2) - 1.75*x - 10.0;
+    return 5.0*pow(x, 2) - 1.75*x - 10.0;
 }
 
 int main() {

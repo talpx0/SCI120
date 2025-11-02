@@ -3,25 +3,7 @@
 
 using namespace std; 
 
-int hello(){
-    cout << "Hello, World!\n";
-    return 0;
-}
-int hello2(){
-    cout << "Hello, World again!\n";
-    return 0;
-}
-int good(){
-    cout << "Goodbye, World!\n";
-    return 0;   
 
-}
-int thanks(){
-    cout << "Thanks, World!\n";
-    return 0;   
-}   
-
- 
 
 int main() {
     cout << "Enter a number: ";
