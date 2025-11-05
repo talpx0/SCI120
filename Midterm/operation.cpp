@@ -33,9 +33,10 @@ int main() {
     // atan2(y, x): angle of vector (x,y) in radians
     double ang = std::atan2(1.0, -1.0); // quadrant-aware; here 135° ≈ 2.35619 rad
     cout << "atan2(1, -1) [rad]   = " << ang << "\n";
-    cout << "atan2(1, -1) [deg]   = " << ang * 180.0 / M_PI << "\n";  // use <numbers> pi in C++20
 
-    // inverse trig (results in radians)
-    cout << "acos(0.5) [deg]      = " << std::acos(0.5) * 180.0 / M_PI << "\n"; // 60°
-    cout << "asin(0.5) [deg]      = " << std::asin(0.5) * 180.0 / M_PI << "\n"; // 30°
+    
+    cout << "acos(0.5) [deg]      = " << std::acos(0.5)  180.0 / M_PI << "\n"; 
+    cout << "asin(0.5) [deg]      = " << std::asin(0.5) * 180.0 / M_PI << "\n"; 
 }
+
+

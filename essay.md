@@ -1,0 +1,6 @@
+A monopoly is a sole seller within a relevant market. If the market is defined narrowly, such as a specific patented molecule, a unique delivery method, or a default-locked channel conferring substantial previlge, or a technology rivals need years to match. In what we call a “pure monopoly,” one firm dominates the relevant market and can influence prices and deter entry through control of key assets, regulation, or strategic conduct, giving it considerable leverage over buyers and would-be rivals [1]. Substitutes may exist, but their pressure is typically residual rather than decisive. This means that it doesn't have to be the only seller in the whole market, or it has the absolute market power that allow it to sell a product with any price it wants. Even a city water utility learns this lesson: hike price too far and some households switch to bottled water, hunt for alternative sources like river or lake, or channeling their inner Stoic—decide to take fewer showers for a while. Thus , The monopolist faces the market demand curve as its own demand, if prices goes up too high, consumers may seek substitutes, switch to inferior alternatives, or postpone their purchases or simply do without. 
+
+
+
+
+[1]: https://example.com "Author, 2025"
